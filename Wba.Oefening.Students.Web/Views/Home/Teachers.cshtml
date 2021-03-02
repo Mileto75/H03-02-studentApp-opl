@@ -1,0 +1,15 @@
+﻿
+@model HomeTeachersViewModel 
+<h2>Teachers</h2>
+<table class="table table-hover table-responsive-md">
+    <tr>
+        <th>teacher name</th>
+    </tr>
+    @foreach (var teacher in Model.Teachers)
+    {
+        <tr>
+            <td><a href="teachers/@teacher.Id">@teacher.TeacherName</a></td>
+        </tr>
+    }
+</table>
+

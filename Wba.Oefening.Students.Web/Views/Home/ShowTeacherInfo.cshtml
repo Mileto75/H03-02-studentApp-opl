@@ -1,0 +1,15 @@
+﻿@model HomeShowTeacherInfoViewModel
+
+<h2>Teacher Info</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.TeacherName</h5>
+        <ul class="card-text">
+            @foreach(var courseName in Model.CourseNames)
+            {
+                <li>@courseName</li>
+            }
+        </ul>
+    </div>
+</div>
